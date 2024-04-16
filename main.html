@@ -13,44 +13,41 @@
     </header>
     <main>
         <form>
-            <h1>
-                Pizza
-            </h1>
-            <input type="radio">
-            <p> Pizza Margherita </p>
-            <input type="radio">
-            <p> Pizza Salami </p>
-            <input type="radio">
-            <p> Pizza Funghi </p>
-            <input type="radio">
-            <p> Pizza Diavolo </p>
-            <h1>
-                Pasta
-            </h1>
-            <input type="radio">
-            <p> Spaghetti Carbonara </p>
-            <input type="radio">
-            <p> Tagliatelle Bolognese </p>
-            <input type="radio">
-            <p> Tortellini Alla Panna </p>
-            <input type="radio">
-            <p> Lasagne </p>
-            <h1>
-                Delivery service
-            </h1>
-            <select>
-                <option> Abholung </option>
-                <option> Lieferung </option>
+            <div>
+                <div>
+                    <h2> Pizza </h2>
+                    <input type="radio"> Pizza Margherita
+                    <input type="radio"> Pizza Salami
+                    <input type="radio"> Pizza Funghi
+                    <input type="radio"> Pizza Diavolo
+                </div>
+                <div>
+                    <h2> Pasta </h2>
+                    <input type="radio"> Spaghetti Carbonara
+                    <input type="radio"> Tagliatelle Bolognese
+                    <input type="radio"> Tortellini Alla Panna
+                    <input type="radio"> Lasagne
+                </div>
+            </div>
+            <br>
+            <h2>
+                Payment and Delivery
+            </h2>
+            <label> Delivery service </label>
+            <select name="auslieferung">
+                <option value="abholung"> Abholung </option>
+                <option value="lieferung"> Lieferung </option>
             </select>
-            <h1>
-                Payment
-            </h1>
-            <select>
-                <option> Bar </option>
-                <option> Karte </option>
+            <br> <br>
+            <label> Payment </label>
+            <select name="bank">
+                <option value="bar"> Bar </option>
+                <option value="kreditkarte"> Kreditkarte </option>
+                <option value="paypal"> Paypal </option>
             </select>
-            <input type="button" value="Send">
-            <input type="button" value="Reset">
+            <br> <br>
+            <button type="submit" value="Send"> Send </button>
+            <button type="reset" value="Reset"> Reset </button>
         </form>
     </main>
     <footer> </footer>
